@@ -12,22 +12,7 @@
   <MinShopVersion>5.6.0</MinShopVersion>
   <MaxShopVersion>5.99.99</MaxShopVersion>
 
-  <!-- Installation block per JTL spec -->
   <Install>
-    <CSS>
-      <file>
-        <name>whatsapp.css</name>
-        <priority>5</priority>
-      </file>
-    </CSS>
-    <JS>
-      <file>
-        <name>whatsapp.js</name>
-        <priority>5</priority>
-        <position>body</position>
-      </file>
-    </JS>
-
     <AdminMenu>
       <Menu>
         <Name>admin_menu_title</Name>
@@ -35,13 +20,29 @@
         <Sort>100</Sort>
       </Menu>
     </AdminMenu>
+
+    <CSS>
+      <file>
+        <name>whatsapp.css</name>
+        <priority>5</priority>
+      </file>
+    </CSS>
+
+    <JS>
+      <file>
+        <name>whatsapp.js</name>
+        <priority>5</priority>
+        <position>body</position>
+      </file>
+    </JS>
   </Install>
 
-  <!-- Hooks: numeric id required -->
+  <!-- Hooks üst düzeyde olabilir -->
   <Hooks>
     <Hook id="352">frontend/template/whatsapp.tpl</Hook>
   </Hooks>
 
+  <!-- Ayarlar -->
   <Config>
     <Settings>
       <Section Name="general" Label="general" Sort="10">
@@ -97,28 +98,25 @@
     <File lang="tr-TR">/lang/tr-TR.xml</File>
   </LocalizationFiles>
 
+  <!-- Geçmiş sürümlere yönelik güncelleme adımları -->
   <Update>
     <Version>1.0.6</Version>
-    <AdminMenu>
-      <Menu>
-        <Name>admin_menu_title</Name>
-        <Filename>adminmenu/index.php</Filename>
-        <Sort>100</Sort>
-      </Menu>
-    </AdminMenu>
+    <!-- 1.0.6'ya güncellerken yapılacak özel bir şey yoksa boş bırakılabilir -->
   </Update>
+
   <Update>
     <Version>1.0.7</Version>
+    <!-- Yapı değişikliği varsa burada minimal anahtar referansları yeterli -->
     <Config>
       <Settings>
         <Section Name="general" Label="general" Sort="10">
-          <Setting Key="phone" />
-          <Setting Key="prefill_message" />
-          <Setting Key="label" />
-          <Setting Key="position" />
-          <Setting Key="visible_on_mobile" />
-          <Setting Key="visible_on_desktop" />
-          <Setting Key="zindex" />
+          <Setting Key="phone"/>
+          <Setting Key="prefill_message"/>
+          <Setting Key="label"/>
+          <Setting Key="position"/>
+          <Setting Key="visible_on_mobile"/>
+          <Setting Key="visible_on_desktop"/>
+          <Setting Key="zindex"/>
         </Section>
       </Settings>
     </Config>
