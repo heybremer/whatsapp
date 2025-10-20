@@ -7,58 +7,13 @@
   <URL>https://example.com</URL>
 
   <XMLVersion>200</XMLVersion>
-  <Version>1.0.5</Version>
+  <Version>1.0.7</Version>
   <CreateDate>2025-10-20</CreateDate>
   <MinShopVersion>5.6.0</MinShopVersion>
   <MaxShopVersion>5.99.99</MaxShopVersion>
 
   <!-- Installation block per JTL spec -->
   <Install>
-    <Settings>
-      <Section name="general" label="general">
-        <Setting name="phone" type="text" sort="10" required="Y">
-          <Name>phone</Name>
-          <Description>phone_desc</Description>
-          <Default></Default>
-          <InputMaxLength>32</InputMaxLength>
-        </Setting>
-        <Setting name="prefill_message" type="textarea" sort="20">
-          <Name>prefill_message</Name>
-          <Description>prefill_message_desc</Description>
-          <Default></Default>
-          <InputMaxLength>500</InputMaxLength>
-        </Setting>
-        <Setting name="label" type="text" sort="30">
-          <Name>label</Name>
-          <Description>label_desc</Description>
-          <Default>WhatsApp</Default>
-          <InputMaxLength>60</InputMaxLength>
-        </Setting>
-        <Setting name="position" type="selectbox" sort="40">
-          <Name>position</Name>
-          <Description>position_desc</Description>
-          <SelectboxOptions>
-            <Option value="right">position_right</Option>
-            <Option value="left">position_left</Option>
-          </SelectboxOptions>
-          <Default>right</Default>
-        </Setting>
-        <Setting name="visible_on_mobile" type="checkbox" sort="50" default="Y">
-          <Name>visible_on_mobile</Name>
-          <Description>visible_on_mobile_desc</Description>
-        </Setting>
-        <Setting name="visible_on_desktop" type="checkbox" sort="60" default="Y">
-          <Name>visible_on_desktop</Name>
-          <Description>visible_on_desktop_desc</Description>
-        </Setting>
-        <Setting name="zindex" type="text" sort="70">
-          <Name>zindex</Name>
-          <Description>zindex_desc</Description>
-          <Default>200</Default>
-          <InputMaxLength>6</InputMaxLength>
-        </Setting>
-      </Section>
-    </Settings>
     <CSS>
       <file>
         <name>whatsapp.css</name>
@@ -72,6 +27,14 @@
         <position>body</position>
       </file>
     </JS>
+
+    <AdminMenu>
+      <Menu>
+        <Name>admin_menu_title</Name>
+        <Filename>adminmenu/index.php</Filename>
+        <Sort>100</Sort>
+      </Menu>
+    </AdminMenu>
   </Install>
 
   <!-- Hooks: numeric id required -->
@@ -79,8 +42,85 @@
     <Hook id="352">frontend/template/whatsapp.tpl</Hook>
   </Hooks>
 
+  <Config>
+    <Settings>
+      <Section Name="general" Label="general" Sort="10">
+        <Setting Key="phone" Type="text" Sort="10" Required="Y">
+          <Name>phone</Name>
+          <Description>phone_desc</Description>
+          <Default></Default>
+          <InputMaxLength>32</InputMaxLength>
+        </Setting>
+        <Setting Key="prefill_message" Type="textarea" Sort="20">
+          <Name>prefill_message</Name>
+          <Description>prefill_message_desc</Description>
+          <Default></Default>
+          <InputMaxLength>500</InputMaxLength>
+        </Setting>
+        <Setting Key="label" Type="text" Sort="30">
+          <Name>label</Name>
+          <Description>label_desc</Description>
+          <Default>WhatsApp</Default>
+          <InputMaxLength>60</InputMaxLength>
+        </Setting>
+        <Setting Key="position" Type="selectbox" Sort="40">
+          <Name>position</Name>
+          <Description>position_desc</Description>
+          <SelectboxOptions>
+            <Option value="right">position_right</Option>
+            <Option value="left">position_left</Option>
+          </SelectboxOptions>
+          <Default>right</Default>
+        </Setting>
+        <Setting Key="visible_on_mobile" Type="checkbox" Sort="50" Default="Y">
+          <Name>visible_on_mobile</Name>
+          <Description>visible_on_mobile_desc</Description>
+        </Setting>
+        <Setting Key="visible_on_desktop" Type="checkbox" Sort="60" Default="Y">
+          <Name>visible_on_desktop</Name>
+          <Description>visible_on_desktop_desc</Description>
+        </Setting>
+        <Setting Key="zindex" Type="number" Sort="70" Default="200">
+          <Name>zindex</Name>
+          <Description>zindex_desc</Description>
+          <NumberAttributes>
+            <Min>0</Min>
+            <Max>999999</Max>
+          </NumberAttributes>
+        </Setting>
+      </Section>
+    </Settings>
+  </Config>
+
   <LocalizationFiles>
     <File lang="de-DE">/lang/de-DE.xml</File>
     <File lang="tr-TR">/lang/tr-TR.xml</File>
   </LocalizationFiles>
+
+  <Update>
+    <Version>1.0.6</Version>
+    <AdminMenu>
+      <Menu>
+        <Name>admin_menu_title</Name>
+        <Filename>adminmenu/index.php</Filename>
+        <Sort>100</Sort>
+      </Menu>
+    </AdminMenu>
+  </Update>
+  <Update>
+    <Version>1.0.7</Version>
+    <Config>
+      <Settings>
+        <Section Name="general" Label="general" Sort="10">
+          <Setting Key="phone" />
+          <Setting Key="prefill_message" />
+          <Setting Key="label" />
+          <Setting Key="position" />
+          <Setting Key="visible_on_mobile" />
+          <Setting Key="visible_on_desktop" />
+          <Setting Key="zindex" />
+        </Section>
+      </Settings>
+    </Config>
+  </Update>
 </jtlshopplugin>
