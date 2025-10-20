@@ -1,0 +1,2 @@
+(function(){function openWA(phone,msg){var url='https://wa.me/'+phone+(msg?'?text='+msg:'');window.open(url,'_blank','noopener');}
+document.addEventListener('DOMContentLoaded',function(){var box=document.getElementById('wa-floating');if(!box)return;var phone=box.getAttribute('data-phone');var msg=box.getAttribute('data-msg');var btn=box.querySelector('.wa-btn');if(!btn)return;btn.addEventListener('click',function(){openWA(phone,msg);});});})();

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <translate key="phone">WhatsApp Telefonnummer</translate>
+  <translate key="phone_desc">Nummer im internationalen Format, z.B. 491234567890</translate>
+  <translate key="prefill_message">Standardnachricht</translate>
+  <translate key="prefill_message_desc">Vorausgefüllter Text für den Chat</translate>
+  <translate key="position">Button Position</translate>
+  <translate key="position_desc">Seite, auf der der Button angezeigt wird</translate>
+  <translate key="position_left">Links</translate>
+  <translate key="position_right">Rechts</translate>
+  <translate key="label">Button-Beschriftung</translate>
+  <translate key="label_desc">Text, der neben dem WhatsApp Icon angezeigt wird</translate>
+  <translate key="visible_on_mobile">Auf Mobil anzeigen</translate>
+  <translate key="visible_on_mobile_desc">Button auf Geräten &lt; 992px Breite sichtbar</translate>
+  <translate key="visible_on_desktop">Auf Desktop anzeigen</translate>
+  <translate key="visible_on_desktop_desc">Button auf Geräten ≥ 992px Breite sichtbar</translate>
+  <translate key="zindex">Z-Index</translate>
+  <translate key="zindex_desc">CSS z-index Wert für die Schaltfläche</translate>
+  <translate key="general">Allgemein</translate>
+</localization>

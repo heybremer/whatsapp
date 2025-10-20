@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<localization>
+  <translate key="phone">WhatsApp Telefon Numarası</translate>
+  <translate key="phone_desc">Uluslararası formatta numara, ör. 905551112233</translate>
+  <translate key="prefill_message">Varsayılan mesaj</translate>
+  <translate key="prefill_message_desc">Sohbet için önceden doldurulmuş metin</translate>
+  <translate key="position">Buton konumu</translate>
+  <translate key="position_desc">Butonun görüneceği taraf</translate>
+  <translate key="position_left">Sol</translate>
+  <translate key="position_right">Sağ</translate>
+  <translate key="label">Buton etiketi</translate>
+  <translate key="label_desc">WhatsApp ikonunun yanında gösterilen metin</translate>
+  <translate key="visible_on_mobile">Mobilde göster</translate>
+  <translate key="visible_on_mobile_desc">Buton 992px altındaki cihazlarda görünsün</translate>
+  <translate key="visible_on_desktop">Masaüstünde göster</translate>
+  <translate key="visible_on_desktop_desc">Buton 992px ve üzeri cihazlarda görünsün</translate>
+  <translate key="zindex">Z-index</translate>
+  <translate key="zindex_desc">Buton için CSS z-index değeri</translate>
+  <translate key="general">Genel</translate>
+</localization>
