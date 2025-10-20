@@ -7,7 +7,7 @@
   <URL>https://example.com</URL>
 
   <XMLVersion>200</XMLVersion>
-  <Version>1.0.5</Version>
+  <Version>1.0.6</Version>
   <CreateDate>2025-10-20</CreateDate>
   <MinShopVersion>5.6.0</MinShopVersion>
   <MaxShopVersion>5.99.99</MaxShopVersion>
@@ -79,6 +79,14 @@
         <position>body</position>
       </file>
     </JS>
+
+    <AdminMenu>
+      <Menu>
+        <Name>admin_menu_title</Name>
+        <Filename>adminmenu/index.php</Filename>
+        <Sort>100</Sort>
+      </Menu>
+    </AdminMenu>
   </Install>
 
   <!-- Hooks: numeric id required -->
@@ -98,4 +106,15 @@
     <File lang="de-DE">/lang/de-DE.xml</File>
     <File lang="tr-TR">/lang/tr-TR.xml</File>
   </LocalizationFiles>
+
+  <Update>
+    <Version>1.0.6</Version>
+    <AdminMenu>
+      <Menu>
+        <Name>admin_menu_title</Name>
+        <Filename>adminmenu/index.php</Filename>
+        <Sort>100</Sort>
+      </Menu>
+    </AdminMenu>
+  </Update>
 </jtlshopplugin>

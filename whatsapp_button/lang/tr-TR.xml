@@ -19,4 +19,5 @@
   <translate key="general">Genel</translate>
   <translate key="admin_save_button">Ayarları Kaydet</translate>
   <translate key="admin_save_success">Ayarlar kaydedildi.</translate>
+  <translate key="admin_menu_title">WhatsApp Butonu</translate>
 </localization>
