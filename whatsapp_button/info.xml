@@ -79,6 +79,14 @@
     <Hook id="352">frontend/template/whatsapp.tpl</Hook>
   </Hooks>
 
+  <AdminMenu>
+    <Menu>
+      <Name>WhatsApp Button</Name>
+      <Filename>adminmenu/index.php</Filename>
+      <Sort>100</Sort>
+    </Menu>
+  </AdminMenu>
+
   <LocalizationFiles>
     <File lang="de-DE">/lang/de-DE.xml</File>
     <File lang="tr-TR">/lang/tr-TR.xml</File>

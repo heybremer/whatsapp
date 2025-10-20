@@ -17,4 +17,6 @@
   <translate key="zindex">Z-index</translate>
   <translate key="zindex_desc">Buton için CSS z-index değeri</translate>
   <translate key="general">Genel</translate>
+  <translate key="admin_save_button">Ayarları Kaydet</translate>
+  <translate key="admin_save_success">Ayarlar kaydedildi.</translate>
 </localization>

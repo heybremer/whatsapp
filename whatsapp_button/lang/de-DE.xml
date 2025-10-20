@@ -17,4 +17,6 @@
   <translate key="zindex">Z-Index</translate>
   <translate key="zindex_desc">CSS z-index Wert für die Schaltfläche</translate>
   <translate key="general">Allgemein</translate>
+  <translate key="admin_save_button">Einstellungen speichern</translate>
+  <translate key="admin_save_success">Einstellungen wurden gespeichert.</translate>
 </localization>
