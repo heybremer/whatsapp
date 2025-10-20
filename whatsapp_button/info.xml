@@ -74,6 +74,14 @@
     </JS>
   </Install>
 
+  <AdminMenu>
+    <Menu>
+      <Name>admin_menu_title</Name>
+      <Filename>adminmenu/index.php</Filename>
+      <Sort>100</Sort>
+    </Menu>
+  </AdminMenu>
+
   <!-- Hooks: numeric id required -->
   <Hooks>
     <Hook id="352">frontend/template/whatsapp.tpl</Hook>
