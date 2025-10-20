@@ -59,6 +59,13 @@
         </Setting>
       </Section>
     </Settings>
+    <AdminMenu>
+      <Menu>
+        <Name>admin_menu_title</Name>
+        <Filename>adminmenu/index.php</Filename>
+        <Sort>100</Sort>
+      </Menu>
+    </AdminMenu>
     <CSS>
       <file>
         <name>whatsapp.css</name>
