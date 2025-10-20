@@ -59,6 +59,13 @@
         </Setting>
       </Section>
     </Settings>
+    <AdminMenu>
+      <Menu>
+        <Name>admin_menu_title</Name>
+        <Filename>adminmenu/index.php</Filename>
+        <Sort>100</Sort>
+      </Menu>
+    </AdminMenu>
     <CSS>
       <file>
         <name>whatsapp.css</name>
@@ -86,6 +93,14 @@
   <Hooks>
     <Hook id="352">frontend/template/whatsapp.tpl</Hook>
   </Hooks>
+
+  <AdminMenu>
+    <Menu>
+      <Name>WhatsApp Button</Name>
+      <Filename>adminmenu/index.php</Filename>
+      <Sort>100</Sort>
+    </Menu>
+  </AdminMenu>
 
   <LocalizationFiles>
     <File lang="de-DE">/lang/de-DE.xml</File>
